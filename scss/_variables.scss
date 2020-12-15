@@ -1,0 +1,18 @@
+// Primary Colors
+$softBlue: hsl(243, 86%, 85%);
+$veryDarkBlue: hsl(243, 87%, 12%);
+// Accent Colors
+$green: hsl(163, 95%, 43%);
+$darkBlue: hsl(243, 58%, 33%);
+// Neutral Colors
+$white: hsl(0, 0%, 100%);
+$gray: hsl(0, 0%, 50%);
+
+// Fonts
+$primaryFont: "Raleway", sans-serif;
+$secondaryFont: "Open Sans", sans-serif;
+
+// Media Queries
+$mq-540-up: "screen and (min-width: 540px)";
+$mq-1000-up: "screen and (min-width: 1000px)";
+$mq-1200-up: "screen and (min-width: 1200px)";

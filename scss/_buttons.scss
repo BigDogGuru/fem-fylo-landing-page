@@ -1,0 +1,31 @@
+button,
+a.button,
+input[type="submit"] {
+  display: inline-block;
+  font-family: $primaryFont;
+  font-weight: 400;
+  border: 0;
+  border-radius: 3px;
+  padding: 6px 15px;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
+
+  &.green {
+    background-color: $green;
+    color: $white;
+    box-shadow: 3px 3px 7px rgba($color: $darkBlue, $alpha: 0.25);
+
+    @media #{$mq-1000-up} {
+      padding: 9px 32px;
+    }
+
+    &:hover {
+      background-color: darken($green, 5%);
+    }
+  }
+
+  &.medButton {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}

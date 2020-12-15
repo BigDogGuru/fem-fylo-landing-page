@@ -1,0 +1,38 @@
+.slanted-div {
+  position: relative;
+  background: $white;
+  overflow: visible;
+  z-index: 1;
+}
+
+.slanted-div::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  transform-origin: right top;
+  transform: skewY(8.25deg);
+
+  @media #{$mq-1000-up} {
+    transform: skewY(6.35deg);
+  }
+}
+
+.slanted-div::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: left bottom;
+  transform: skewY(8.25deg);
+
+  @media #{$mq-1000-up} {
+    transform: skewY(6.35deg);
+  }
+}

@@ -1,0 +1,33 @@
+header {
+  position: relative;
+
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    font-family: $primaryFont;
+    font-weight: 400;
+    font-size: 0.75rem;
+
+    a,
+    button {
+      font-family: $primaryFont;
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: $white;
+
+      @media #{$mq-1000-up} {
+        font-size: 1rem;
+      }
+    }
+
+    a {
+      margin-right: 15px;
+
+      @media #{$mq-1000-up} {
+        margin-right: 30px;
+      }
+    }
+  }
+}

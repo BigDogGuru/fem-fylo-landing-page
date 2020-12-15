@@ -1,0 +1,55 @@
+.signup {
+  text-align: center;
+
+  @media #{$mq-540-up} {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+
+  @media #{$mq-1000-up} {
+    max-width: none;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+
+    @media #{$mq-1000-up} {
+      margin-bottom: 28px;
+    }
+  }
+
+  h3 {
+    max-width: 675px;
+    margin: 0 auto 40px auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    max-width: 550px;
+
+    @media #{$mq-1000-up} {
+      flex-direction: row;
+      max-width: 630px;
+    }
+
+    input[type="email"] {
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
+      @media #{$mq-1000-up} {
+        flex: 2;
+        margin-right: 15px;
+      }
+    }
+
+    input[type="submit"] {
+      @media #{$mq-1000-up} {
+        flex: 1;
+        margin-top: 0;
+        margin-left: 15px;
+      }
+    }
+  }
+}
